@@ -1,0 +1,110 @@
+
+
+.menu_header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_button{
+    background: url(../../img/menu_btn.png) #FFFFFF;
+    background-position: center;
+    background-size: 20px 5px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    z-index: 3;
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgba(26, 26, 50, 0.19);
+    border-radius: 74px;
+    cursor: pointer;
+}
+
+.logo_picture{
+    width: 155px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.menu_list{
+    list-style: none;
+    width: 65%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 5%;
+    transition: .5s;
+}
+
+.hide{
+    transform:translateX(-200%);
+}
+
+.menu_list_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page_name_button{
+    height: 30px;
+    width: 199px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(26, 26, 50, 0.19);
+    border-radius: 74px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    src: local('Gilroy Medium');
+    cursor: pointer;
+}
+
+.active{
+    color: white;
+    background: linear-gradient(116.85deg, #99B3FF 0%, #C6F221 121.5%);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgba(26, 26, 50, 0.19);
+    border-radius: 74px;
+    font-weight: 700;
+    src: local('Gilroy Bold');
+}
+
+.menu_list_item input[type=radio] {
+	display: none;
+}
+
+.menu_list_item label {
+    width: 12px;
+	height: 12px;
+    border-radius: 50%;
+    background-color: rgba(198, 242, 33, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	user-select: none;
+    cursor: pointer;
+}
+
+.label_inner{
+    width: 6px;
+	height: 6px;
+	background: white;
+    border-radius: 50%;
+}
+ 
+#active_button{
+    background-color: rgba(153, 179, 255, 1);
+}
